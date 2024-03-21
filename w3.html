@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stylesheet</title>
+    <link rel="stylesheet" type="text/css" href="style1.css" media="all" id="style1" />
+    <link rel="stylesheet" type="text/css" href="style2.css" media="all" id="style2" />
+</head>
+<button onclick="switchStyle('style1')">Use Style 1</button>
+<button onclick="switchStyle('style2')">Use Style 2</button>
+
+<script>
+    function switchStyle(style) {
+    
+        var sheets = document.styleSheets;
+
+    
+        for (var i = 0; i < sheets.length; i++) {
+            
+            if (sheets[i].id == style) {
+                
+                sheets[i].disabled = false;
+            } else {
+                
+                sheets[i].disabled = true;
+            }
+        }
+    }
+</script>
+
+<body>
+    <h1>WHERE DOES RAIN WATER COME FROM</h1>
+    Clouds are made of water droplets. Within a cloud, water droplets condense onto one another, causing the droplets to
+    grow. When these water droplets get too heavy to stay suspended in the cloud, they fall to Earth as rain.
+    <h2>HOW DO BIRDS SLEEP WITHOUT FALLING </h2>
+    Actually, it is very unlikely that roosting birds will fall from their perch. When the bird places weight on its
+    feet, the muscles in the leg force the tendons of the feet to tighten, keeping the foot closed. This gives the bird
+    a vice-like grip around any branch it may be resting on, so the bird doesn't slip off.
+
+
+</body>
+
+</html>
